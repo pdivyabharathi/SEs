@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <title>AIT-CEAR</title>
   </head>
   <body>
@@ -45,8 +47,155 @@
       </nav>
     </div>
 
+
+
 <div class="rest-body">
-    <img src="full-logo.jpg" class="sticky-logo"> 
+    <img src="full-logo.jpg" class="sticky-logo">
+
+<div class="registration">
+    <form action="#" style="color: white">
+
+  <header>
+    <h2>Registration Form</h2>
+   
+  </header>
+  
+  <div>
+    <label class="desc" id="title1" for="Field1">Full Name</label>
+    <div><i class="fa fa-user icon"></i>
+      <input id="Field1" name="ur_name" placeholder="Your name" type="text" class="field text fn" value="" size="8" tabindex="1">
+    </div>
+  </div>
+    
+  <div>
+    <label class="desc" id="title3" for="Field2">
+      Email
+    </label>
+    <div><i class="fa fa-envelope icon"></i>
+      <input id="Field3" name="Field3" type="email" placeholder="Your email" spellcheck="false" value="" maxlength="255" tabindex="2"> 
+   </div>
+  </div>
+    
+  <div>
+    <label class="desc" id="title1" for="Field1">Mobile no.</label>
+    <div><i class="fa fa-phone fa-lg" ></i>
+      <input id="Field1" name="Field1" type="number" placeholder="Your mobile_no" class="field text fn" value="" size="8" tabindex="3">
+    </div>
+  </div>
+
+   <div>
+    <label class="desc" id="title1" for="Field1">Date of Birth</label>
+    <div>
+    <input type="datetime-local" id="myLocalDate"  value="2014-11-16T15:25:33" tabindex="4">
+    
+    </div>
+  </div>
+
+
+    
+  <div>
+    <fieldset>
+    
+      <legend id="title5" class="desc">
+        Branch
+      </legend>
+      
+      <div>
+        <input id="radioDefault_5" name="Field5" placeholder="Your branch" type="hidden" value="">
+        <div>
+          <input id="Field5_0" name="Field5" type="radio" value="First Choice" tabindex="5" checked="checked">
+          <label class="choice" for="Field5_0">COMP</label>
+          <span class="checkmark"></span>
+        </div>
+        <div>
+          <input id="Field5_0" name="Field5" type="radio" value="Second Choice" tabindex="6">
+          <label class="choice" for="Field5_1">IT</label>
+          <span class="checkmark"></span>
+        </div>
+        <div>
+          <input id="Field5_0" name="Field5" type="radio" value="Third Choice" tabindex="7">
+          <label class="choice" for="Field5_2">EnTC</label>
+          <span class="checkmark"></span>
+        </div>
+        <div>
+          <input id="Field5_0" name="Field5" type="radio" value="Fourth Choice" tabindex="8">
+          <label class="choice" for="Field5_2">MECH</label>
+          <span class="checkmark"></span>
+        </div>
+      </div>
+    </fieldset>
+  </div>
+
+   <div>
+    <label class="desc" id="title106" for="Field106">
+      Year
+    </label>
+    <div>
+    <select id="Field106" name="Field106"  class="field select medium" tabindex="9"> 
+      <option value="First Choice">FE</option>
+      <option value="Second Choice">SE</option>
+      <option value="Third Choice">TE</option>
+       <option value="Third Choice">BE</option>
+    </select>
+    </div>
+  </div>
+
+  
+  <div>
+    <fieldset>
+      <legend id="title6" class="desc">
+        Skill Set
+      </legend>
+      <div>
+      <div>
+        <input id="Field6" name="Field6" type="checkbox" value="First Choice" tabindex="10">
+        <label class="choice" for="Field6">Web Development</label>
+      </div>
+      <div>
+        <input id="Field7" name="Field7" type="checkbox" value="Second Choice" tabindex="11">
+        <label class="choice" for="Field7">Artificial Intelligence</label>
+      </div>
+      <div>
+        <input id="Field7" name="Field7" type="checkbox" value="Second Choice" tabindex="12">
+        <label class="choice" for="Field7">Public Relations</label>
+      </div>
+      <div>
+        <input id="Field7" name="Field7" type="checkbox" value="Second Choice" tabindex="13">
+        <label class="choice" for="Field7">Poster Designing</label>
+      </div>
+      <div>
+        <input id="Field8" name="Field8" type="checkbox" value="Third Choice" tabindex="14">
+        <label class="choice" for="Field8">Others</label>
+      </span>
+      </div>
+    </fieldset>
+  </div>
+  
+ 
+
+  <div>
+    <label class="desc" id="title4" for="Field4">
+     About You
+    </label>
+  
+    <div>
+      <textarea id="Field4" name="Field4" placeholder="Write about yourself"spellcheck="true" rows="10" cols="50" tabindex="15"></textarea>
+    </div>
+  </div>
+  
+
+
+  <div>
+    <div>
+      <input id="register_btn" name="saveForm" type="submit" value="Register!">
+    </div>
+  </div>
+  
+</form>
+</div>
+
+
+
   </div>
   <div class="contact-div">
   <div class="contact-heading-div">
