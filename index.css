@@ -411,7 +411,21 @@ textarea:focus {
     text-align: right;
   }
 }
+.registration{
 
+padding: 0 10px;
+
+
+}
+.img-container{
+  text-align: center;
+  
+  position: absolute;
+  top: 365px;
+  left: 50%;
+  transform: translateX(-50%);
+
+}
 
 .event-name{
   font-size: 60px;
@@ -551,6 +565,7 @@ textarea:focus {
 
 
 .contact-div{
+  position: absolute;
   background-color: #23A0A0;
   color: black;
   overflow-x: hidden;
@@ -719,20 +734,4 @@ font-size: 20px;
 }
 
 }
-/*Form*/
-.registration{
-/*
- background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);*/
-padding: 0 10px;
-font-family: 'Poppins', sans-serif;
 
-}
-.img-container{
-  text-align: center;
-  
-  position: absolute;
-  top: 365px;
-  left: 50%;
-  transform: translateX(-50%);
-
-}
