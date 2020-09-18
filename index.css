@@ -1,5 +1,5 @@
 body {
-  background-color: red;
+  background-color: black;
 }
 .nav-logo{
   width: 55px;
@@ -565,7 +565,10 @@ padding: 0 10px;
 
 
 .contact-div{
-  position:relative;
+    
+   left: 0;
+   bottom: 0;
+   width: 100%;
   background-color: #23A0A0;
   color: black;
   overflow-x: hidden;
