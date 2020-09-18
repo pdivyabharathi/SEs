@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Baumans">
 
     <title>AIT-CEAR</title>
   </head>
@@ -49,21 +50,23 @@
 
 
 
-<div class="rest-body">
-    <img src="full-logo.jpg" class="sticky-logo">
-
+<div class="rest-body"> 
+  
+    <div class="img-container">
+         <img src="full-logo.jpg" class="sticky-logo"> 
+    </div>
 <div class="registration">
     <form action="#" style="color: white">
 
   <header>
-    <h2>Registration Form</h2>
-   
+    <h2 style="color: #23A0A0; font-family: Baumans";>Join Us</h2>
+   <hr style="height:2px; width: 60%;border-radius: 15%; background-color:#23A0A0;">
   </header>
   
   <div>
     <label class="desc" id="title1" for="Field1">Full Name</label>
     <div><i class="fa fa-user icon"></i>
-      <input id="Field1" name="ur_name" placeholder="Your name" type="text" class="field text fn" value="" size="8" tabindex="1">
+      <input id="Field1" name="ur_name" placeholder="Your name" type="text" class="field text fn" value="" size="8" tabindex="1" required>
     </div>
   </div>
     
@@ -72,24 +75,17 @@
       Email
     </label>
     <div><i class="fa fa-envelope icon"></i>
-      <input id="Field3" name="Field3" type="email" placeholder="Your email" spellcheck="false" value="" maxlength="255" tabindex="2"> 
+      <input id="Field3" name="Field3" type="email" placeholder="Your email" spellcheck="false" value="" maxlength="255" tabindex="2" required> 
    </div>
   </div>
     
   <div>
     <label class="desc" id="title1" for="Field1">Mobile no.</label>
     <div><i class="fa fa-phone fa-lg" ></i>
-      <input id="Field1" name="Field1" type="number" placeholder="Your mobile_no" class="field text fn" value="" size="8" tabindex="3">
+      <input id="Field1" name="Field1" type="tel" placeholder="Eg:123-456-7890" class="field text fn" value="" size="8" tabindex="3" style="width: 50%" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
     </div>
   </div>
 
-   <div>
-    <label class="desc" id="title1" for="Field1">Date of Birth</label>
-    <div>
-    <input type="datetime-local" id="myLocalDate"  value="2014-11-16T15:25:33" tabindex="4">
-    
-    </div>
-  </div>
 
 
     
@@ -101,7 +97,7 @@
       </legend>
       
       <div>
-        <input id="radioDefault_5" name="Field5" placeholder="Your branch" type="hidden" value="">
+        <input id="radioDefault_5" name="Field5" placeholder="Your branch" type="hidden" value="" required>
         <div>
           <input id="Field5_0" name="Field5" type="radio" value="First Choice" tabindex="5" checked="checked">
           <label class="choice" for="Field5_0">COMP</label>
@@ -131,7 +127,7 @@
       Year
     </label>
     <div>
-    <select id="Field106" name="Field106"  class="field select medium" tabindex="9"> 
+    <select id="Field106" name="Field106"  class="field select medium" tabindex="9" required> 
       <option value="First Choice">FE</option>
       <option value="Second Choice">SE</option>
       <option value="Third Choice">TE</option>
@@ -172,14 +168,21 @@
   </div>
   
  
+   <div>
+    <label class="desc" id="title1" for="Field1" >Date of Birth</label>
+    <div>
+    <input type="datetime-local" id="myLocalDate"  value="2014-11-16T15:25:33" tabindex="4" style="width: 52%" required>
+    
+    </div>
+  </div>
 
   <div>
-    <label class="desc" id="title4" for="Field4">
+    <label class="desc" id="title4" for="Field4" >
      About You
     </label>
   
     <div>
-      <textarea id="Field4" name="Field4" placeholder="Write about yourself"spellcheck="true" rows="10" cols="50" tabindex="15"></textarea>
+      <textarea id="Field4" name="Field4" placeholder="Write about yourself"spellcheck="true" rows="5" cols="55" tabindex="15" style="width: 52%"></textarea>
     </div>
   </div>
   
