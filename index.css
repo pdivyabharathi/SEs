@@ -183,6 +183,8 @@ header .overlay {
 form{
  
   position: relative;
+  top: 120px;
+  min-height: 1000px;
   }
 form header {
  
@@ -236,11 +238,13 @@ fieldset {
     width: 24px;
     clear: both;
 }
+
 .checkbox-label input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
 }
+
 .checkbox-label .checkbox-custom {
     position: absolute;
     top: 0px;
@@ -256,6 +260,8 @@ fieldset {
     -o-transition: all 0.3s ease-out;
     border: 2px solid #FFFFFF;
 }
+
+
 .checkbox-label input:checked ~ .checkbox-custom {
     background-color: #FFFFFF;
     border-radius: 5px;
@@ -265,6 +271,8 @@ fieldset {
     opacity:1;
     border: 2px solid #FFFFFF;
 }
+
+
 .checkbox-label .checkbox-custom::after {
     position: absolute;
     content: "";
@@ -285,6 +293,8 @@ fieldset {
     -ms-transition: all 0.3s ease-out;
     -o-transition: all 0.3s ease-out;
 }
+
+
 .checkbox-label input:checked ~ .checkbox-custom::after {
   -webkit-transform: rotate(45deg) scale(1);
   -ms-transform: rotate(45deg) scale(1);
@@ -299,6 +309,10 @@ fieldset {
   background-color: transparent;
   border-radius: 0;
 }
+
+
+
+
 .checkbox-label .checkbox-custom::before {
     position: absolute;
     content: "";
@@ -312,6 +326,7 @@ fieldset {
     -ms-transform: scale(0);
     transform: scale(0);    
 }
+
 .checkbox-label input:checked ~ .checkbox-custom::before {
     left: -3px;
     top: -3px;
@@ -402,17 +417,9 @@ textarea:focus {
 
 padding: 0 10px;
 
-
+top: 100px;
 }
-.img-container{
-  text-align: center;
-  
-  position: absolute;
-  top: 365px;
-  left: 50%;
-  transform: translateX(-50%);
 
-}
 .event-name{
   font-size: 60px;
   color: #23A0A0;
@@ -550,12 +557,12 @@ padding: 0 10px;
 
 
 .contact-div{
+  position: relative;
   background-color: #23A0A0;
   color: black;
   overflow-x: hidden;
-  margin-top: 5%;
-  margin-bottom: 0px !important;
-  bottom: 0px;
+  margin-top: 10%;
+ padding: 15px;
 }
 
 .contact-heading-us{
