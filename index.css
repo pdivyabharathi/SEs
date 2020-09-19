@@ -426,7 +426,6 @@ padding: 0 10px;
   transform: translateX(-50%);
 
 }
-
 .event-name{
   font-size: 60px;
   color: #23A0A0;
@@ -521,8 +520,7 @@ padding: 0 10px;
 
 .project-body .card .imgBx {
   position: relative;
-  width: 260px ;
-  height:280px;
+  width: 260px height:280px;
   text-align: center;
   left: 30px;
   top: 5px;
@@ -565,10 +563,6 @@ padding: 0 10px;
 
 
 .contact-div{
-    
-   left: 0;
-   bottom: 0;
-   width: 100%;
   background-color: #23A0A0;
   color: black;
   overflow-x: hidden;
@@ -691,7 +685,7 @@ font-size: 20px;
   height: 500px;
   border-radius: 100%;
   opacity: 0.09;
- 
+  position: sticky;
   width: 520px;
   top:33%;
   display: block;
@@ -737,4 +731,3 @@ font-size: 20px;
 }
 
 }
-
