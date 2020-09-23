@@ -557,12 +557,12 @@ top: 100px;
 
 
 .contact-div{
-  position: relative;
+  position: absolute;
   background-color: #23A0A0;
   color: black;
   overflow-x: hidden;
   margin-top: 0%;
-
+margin-bottom: 0px;
 }
 
 .contact-heading-us{
