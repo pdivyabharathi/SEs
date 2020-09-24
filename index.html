@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+
+  <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -56,35 +57,38 @@
          <img src="full-logo.jpg" class="sticky-logo"> 
     </div>
 <div class="registration">
-    <form action="#" style="color: white">
+   
+    <form action="" name='registration' onSubmit="return formValidation();" style="color: white">
 
   <header>
     <h2 style="color: #23A0A0; font-family: Baumans";>Join Us</h2>
-   <hr style="height:2px; width: 60%;border-radius: 15%; background-color:#23A0A0;">
+   <hr style="height:2px; width: 60%;border-radius: 15%; background-color:#23A0A0;" id="line">
   </header>
   
   <div>
-    <label class="desc" id="title1" for="Field1">Full Name</label>
+    <label class="desc" id="title1" for="name">Full Name</label>
     <div><i class="fa fa-user icon"></i>
-      <input id="Field1" name="ur_name" placeholder="Your name" type="text" class="field text fn" value="" size="8" tabindex="1" required>
+      <input id="name" name="name" placeholder="Your name" type="text" class="input" value="" size="8" tabindex="1" required>
     </div>
   </div>
     
   <div>
-    <label class="desc" id="title3" for="Field2">
+    <label class="input-div" id="title3" for="email">
       Email
     </label>
     <div><i class="fa fa-envelope icon"></i>
-      <input id="Field3" name="Field3" type="email" placeholder="Your email" spellcheck="false" value="" maxlength="255" tabindex="2" required> 
+      <input id="email" name="email" type="email" class="input" placeholder="Your email" spellcheck="false" value="" maxlength="255" tabindex="2" required> 
    </div>
   </div>
+
     
   <div>
-    <label class="desc" id="title1" for="Field1">Mobile no.</label>
+    <label class="input-div" id="title1" for="phone">Phone Number</label>
     <div><i class="fa fa-phone fa-lg" ></i>
-      <input id="Field1" name="Field1" type="tel" placeholder="Eg:123456789" class="field text fn" value="" size="8" tabindex="3" style="width: 50%" pattern="[1-9]{1}[0-9]{9}" required>
+       <input id="phone" name="phone" type="number" class="input" required>
     </div>
   </div>
+
 
 
 
@@ -196,11 +200,15 @@
 
   <div>
     <div>
-      <input id="register_btn" name="saveForm" type="submit" value="Register!">
+      <input id="register_btn" class="btn" name="saveForm" type="submit" value="Register!">
     </div>
   </div>
+    <div id="error">
+        
+         </div>
   
 </form>
+
 </div>
 
 
@@ -281,7 +289,7 @@
     </div>
 
 </div>
-  
+  <script src="script.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
