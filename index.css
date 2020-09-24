@@ -1,3 +1,4 @@
+
 body {
   background-color: #23A0A0;
 }
@@ -166,10 +167,11 @@ header .overlay {
   margin-left: auto;
   margin-right: auto;
 }
+
 .rest-body{
   background-color: #000000;
   z-index: -1;
-
+  height: 1100px;
 }
 .img-container{
   text-align: center;
@@ -178,6 +180,24 @@ header .overlay {
   left: 50%;
   transform: translateX(-50%);
 
+}
+#error{
+  width:52%;
+  margin: auto;
+  font-family: Baumans;
+  margin-bottom: 20px;
+  background: white;
+  padding: 0px;
+  text-align: center;
+  font-size: 14px;
+  transition: all 0.5s ease;
+  color:red;
+  border-radius: 10px;
+
+}
+.visible{
+  display: none;
+  transition: all 0.5s ease-in-out;
 }
 
 form{
@@ -227,124 +247,7 @@ fieldset {
   border: 0;
   padding: 0;
 }
-/*.checkbox-label {
-    display: block;
-    position: relative;
-    margin: auto;
-    cursor: pointer;
-    font-size: 22px;
-    line-height: 24px;
-    height: 24px;
-    width: 24px;
-    clear: both;
-}
 
-.checkbox-label input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-}
-
-.checkbox-label .checkbox-custom {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    height: 24px;
-    width: 24px;
-    background-color: #23A0A0;
-    border-radius: 5px;
-    transition: all 0.3s ease-out;
-    -webkit-transition: all 0.3s ease-out;
-    -moz-transition: all 0.3s ease-out;
-    -ms-transition: all 0.3s ease-out;
-    -o-transition: all 0.3s ease-out;
-    border: 2px solid #FFFFFF;
-}
-
-
-.checkbox-label input:checked ~ .checkbox-custom {
-    background-color: #FFFFFF;
-    border-radius: 5px;
-    -webkit-transform: rotate(0deg) scale(1);
-    -ms-transform: rotate(0deg) scale(1);
-    transform: rotate(0deg) scale(1);
-    opacity:1;
-    border: 2px solid #FFFFFF;
-}
-
-
-.checkbox-label .checkbox-custom::after {
-    position: absolute;
-    content: "";
-    left: 12px;
-    top: 12px;
-    height: 0px;
-    width: 0px;
-    border-radius: 5px;
-    border: solid #009BFF;
-    border-width: 0 3px 3px 0;
-    -webkit-transform: rotate(0deg) scale(0);
-    -ms-transform: rotate(0deg) scale(0);
-    transform: rotate(0deg) scale(0);
-    opacity:1;
-    transition: all 0.3s ease-out;
-    -webkit-transition: all 0.3s ease-out;
-    -moz-transition: all 0.3s ease-out;
-    -ms-transition: all 0.3s ease-out;
-    -o-transition: all 0.3s ease-out;
-}
-
-
-.checkbox-label input:checked ~ .checkbox-custom::after {
-  -webkit-transform: rotate(45deg) scale(1);
-  -ms-transform: rotate(45deg) scale(1);
-  transform: rotate(45deg) scale(1);
-  opacity:1;
-  left: 8px;
-  top: 3px;
-  width: 6px;
-  height: 12px;
-  border: solid #23A0A0;
-  border-width: 0 2px 2px 0;
-  background-color: transparent;
-  border-radius: 0;
-}
-
-
-
-
-.checkbox-label .checkbox-custom::before {
-    position: absolute;
-    content: "";
-    left: 10px;
-    top: 10px;
-    width: 0px;
-    height: 0px;
-    border-radius: 5px;
-    border: 2px solid #23A0A0;
-    -webkit-transform: scale(0);
-    -ms-transform: scale(0);
-    transform: scale(0);    
-}
-
-.checkbox-label input:checked ~ .checkbox-custom::before {
-    left: -3px;
-    top: -3px;
-    width: 24px;
-    height: 24px;
-    border-radius: 5px;
-    -webkit-transform: scale(3);
-    -ms-transform: scale(3);
-    transform: scale(3);
-    opacity:0;
-    z-index: 999;
-    transition: all 0.3s ease-out;
-    -webkit-transition: all 0.3s ease-out;
-    -moz-transition: all 0.3s ease-out;
-    -ms-transition: all 0.3s ease-out;
-    -o-transition: all 0.3s ease-out;
-}
-*/
 
 #register_btn{
   width: 52%;
@@ -420,310 +323,200 @@ padding: 0 10px;
 top: 100px;
 }
 
-.event-name{
-  font-size: 60px;
-  color: #23A0A0;
-  letter-spacing:2px;
+.event-name {
+ font-size: 60px;
+  color: rgb(35, 160, 160); 
+ letter-spacing: 2px;
   font-weight: 600;
-}
-
+   }
 .coming-button{
-  padding-right:5px; 
-}
-
-.coming-button-register{
-  font-size: 50px;
-}
-
-.coming-content{
-  text-align: center;
-}
-
-.fa-medal{
-  color: yellow;
-}
-
-.testimonials-heading{  
-  color: #D3D7D8;
-  font-size: 78px;
-}
-.testimonials-heading-div{
-  text-align: center;
-  margin-top: 5%;
-}
-
-.ap-sir{
-  height: 250px;
-  width: 250px;  
-  border-radius: 100%;
-  border:solid;
-  border-color: #23A0A0;
-  padding: 12px;
-  border-width: 9px;
-  margin-top: 15px;
-}
-
-.testimonials-div{
-  overflow-x: hidden;
-  overflow-y: hidden;
-  margin-top: 5%;
-}
-
-.quotations{
-  font-size: 35px;
-  color: #23A0A0;
-}
-
-.testimonials-content{
-  color: #23A0A0;
-  font-size: 17px; 
-  width: 90%;
-  margin-left: 5%;
-}
- 
- .carousel-indicators{
-  position: relative;
-  margin-top: 2%;
+ padding-right: 5px; 
  }
-
- .boody {
+.coming-button-register {
+ font-size: 50px;
+  }
+.coming-content {
+ text-align: center; }
+.fa-medal { 
+  color: yellow; }
+.testimonials-heading {
+ color: rgb(211, 215, 216); 
+  font-size: 78px; }
+.testimonials-heading-div {
+ text-align: center;
+  margin-top: 5%; }
+.ap-sir {
+ height: 250px; width: 250px;
+  border-radius: 100%;
+  border: 9px solid rgb(35, 160, 160); 
+  padding: 12px; 
+  margin-top: 15px; }
+.testimonials-div { 
+  overflow: hidden;
+  margin-top: 5%; }
+.quotations { 
+  font-size: 35px;
+  color: rgb(35, 160, 160); }
+.testimonials-content {
+ color: rgb(35, 160, 160); 
+  font-size: 17px;
+  width: 90%;
+  margin-left: 5%; }
+.carousel-indicators { 
+  position: relative; 
+  margin-top: 2%; }
+.boody { 
   display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.project-body {
-  position: relative;
+  justify-content: center; 
+  align-items: center; }
+.project-body { 
+  position: relative; 
   width: 110%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  padding: 30px;
-}
-
-.project-body .card {
+  padding: 30px; }
+.project-body .card { 
   position: relative;
   width: 370px;
   height: 295px;
-  background: #23A0A0;
+  background: rgb(35, 160, 160);
   margin: 30px;
-  padding: 20px 15px;
-  
-}
-
+  padding: 20px 15px; }
 .project-body .card .imgBx {
-  position: relative;
-  width: 260px height:280px;
+ position: relative;
+  width: 260px;
+  height: 280px;
   text-align: center;
-  left: 30px;
+  left: 30px; 
   top: 5px;
   z-index: 1;
-  background: #D3D7D8;
-
-}
-
-
+  background: rgb(211, 215, 216); }
 .project-body .card:hover {
-  height: 610px;
-  width: 750px;
-  background-color: black;
-
-}
-
-
-.project-body .card .content {
-  position: relative;
-  margin-top: -100px;
+ height: 610px; width: 750px; 
+  background-color: black; }
+.project-body .card .content { 
+  position: relative; 
+  margin-top: -100px; 
   padding: 10px 15px;
   text-align: center;
-  visibility: hidden;
-  opacity: 0;
-  transition: 0.3s ease-in-out;
-}
-
+  visibility: hidden; 
+  opacity: 0; 
+  transition: all 0.3s ease-in-out 0s; }
 .project-body .card:hover .content {
-  visibility: visible;
-  opacity: 1;
+ visibility: visible; opacity: 1;
   margin-top: 20px;
-  transition-delay: 0.3s;
-}
-
+  transition-delay: 0.3s; }
 .project-body .card-boy:hover {
-  height: 710px;
-  width: 750px;
-  background-color: black;
-}
-
-
-.contact-div{
-  position: absolute;
-  background-color: #23A0A0;
-  color: black;
-  overflow-x: hidden;
-  margin-top: 0%;
-margin-bottom: 0px;
-}
-
-.contact-heading-us{
-  font-size: 50px;
-}
-.contact-heading-div{
-  text-align: center;
-}
-
-.contact-individual{
+ height: 710px; width: 750px; 
+  background-color: black; }
+.contact-div {
+ background-color: rgb(35, 160, 160);
+  color: black; 
+  overflow-x: hidden; 
+  margin-top: 5%; }
+.contact-heading-us { 
+  font-size: 50px; }
+.contact-heading-div {
+ text-align: center; }
+.contact-individual { 
   padding-left: 2%;
-  padding-top: 5%;
-}
-
-.contact-img{
-  padding-right: 3%;
-}
-
-.contact-individual-heading{
-text-align: center;
-font-weight: bolder;
-font-size: 20px;
-}
-
-.contact-row{
-  margin-top: 50px;
-}
-.contact-row a{
-  text-decoration: none;
-  color: black;
-}
-
-
-
-.form-body{
-  width: 410px;
-  height: 520px;
-  background: #e6e6e6;
-  border-radius: 8px;
-  box-shadow: 0 0 40px -10px #000;
-  margin: calc(50vh - 220px) auto;
+  padding-top: 5%; }
+.contact-img {
+ padding-right: 3%; }
+.contact-individual-heading { 
+  text-align: center; font-weight: bolder; font-size: 20px; }
+.contact-row {
+ margin-top: 50px; }
+.contact-row a {
+ text-decoration: none; color: black; }
+.form-body {
+ width: 410px; height: 520px;
+  background: rgb(230, 230, 230);
+  border-radius: 8px; 
+  box-shadow: rgb(0, 0, 0) 0px 0px 40px -10px; 
   padding: 20px 30px;
-  max-width: calc(100vw - 40px);
+   max-width: calc(100vw - 40px);
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
-  position: relative;
-  margin:auto;
-}
-
-.modal-content{
-  background:transparent !important;
-  border-width: 0 !important;
-  width: 0;
-  height: 0;
-}
-
+    font-family: Montserrat, sans-serif; 
+    position: relative; 
+  margin: auto; }
+.modal-content {
+ width: 0px; height: 0px; 
+ background: transparent !important;
+  border-width: 0px !important; }
 .contact-heading {
-  margin: 10px 0;
+ margin: 10px 0px;
   padding-bottom: 10px;
-  width: 180px;
-  color: #78788c;
-  border-bottom: 3px solid #78788c
-}
-
+  width: 180px; 
+ color: rgb(120, 120, 140);
+  border-bottom: 3px solid rgb(120, 120, 140); }
 .contact-input {
-  width: 100%;
-  padding: 10px;
+ width: 100%; padding: 10px;
   box-sizing: border-box;
-  background: none;
-  outline: none;
-  resize: none;
-  border: 0;
-  font-family: 'Montserrat', sans-serif;
-  transition: all .3s;
-  border-bottom: 2px solid #bebed2
-}
-
-.contact-input:focus {
-  border-bottom: 2px solid #78788c
-}
-
-.contact-label:before {
-  content: attr(type);
+   background: none;
+   outline: none; resize: none; 
+   border-width: 0px 0px 2px; 
+   border-top-style: initial;
+    border-right-style: initial; 
+   border-left-style: initial; 
+   border-top-color: initial; 
+   border-right-color: initial; 
+   border-left-color: initial; 
+   border-image: initial; 
+   font-family: Montserrat, sans-serif; 
+   transition: all 0.3s ease 0s; 
+   border-bottom-style: solid;
+    border-bottom-color: rgb(190, 190, 210); }
+.contact-input:focus { 
+  border-bottom: 2px solid rgb(120, 120, 140); }
+.contact-label::before {
+ content: attr(type);
   display: block;
-  margin: 28px 0 0;
-  font-size: 14px;
-  color: #5a5a5a
-}
-
-.contact-send {
-  float: right;
-  padding: 8px 12px;
-  margin: 8px 0 0;
-  font-family: 'Montserrat', sans-serif;
-  border: 2px solid #78788c;
-  background: 0;
-  color: #5a5a6e;
-  cursor: pointer;
-  transition: all .3s;
-}
-
-.contact-send:hover {
-  background: #78788c;
-  color: #fff
-}
-
-.copyright{
-  text-align: center;
-  font-weight: bolder;
-  margin-top: 3%;
-}
-
-@media (max-width:990px){
-  .sticky-logo{
-  z-index: 0;
-  height: 500px;
-  border-radius: 100%;
-  opacity: 0.09;
-  position: sticky;
-  width: 520px;
-  top:33%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-.nav-link{
-  font-size: 30px;
-}
-.navbar-brand{
-  font-size: 50px;
-}
-
-.coming-soon-div{
-  margin-top:15%;
-}
-
-.as{
-  height: 325px;
-  margin: auto;
-}
-
-.project-body .card:hover {
-  height: 800px;
-}
-
-.contact-row{
-  font-size: 20px;
-}
-
-.download-font{
-  font-size: 25px;
-}
-
-.testimonials-div{
-  overflow-x: hidden;
-  overflow-y: hidden;
-  margin-top: 9%;
-}
-
-.coming-button-register{
-  font-size: 35px;
-}
-
+  margin: 28px 0px 0px;
+  font-size: 14px; 
+  color: rgb(90, 90, 90); }
+.contact-send { 
+  float: right; padding: 8px 12px; 
+  margin: 8px 0px 0px;
+   font-family: Montserrat, sans-serif;
+    border: 2px solid rgb(120, 120, 140);
+     background: 0px center; 
+    color: rgb(90, 90, 110); cursor: pointer; 
+    transition: all 0.3s ease 0s; }
+.contact-send:hover { 
+  background: rgb(120, 120, 140);
+   color: rgb(255, 255, 255); }
+.copyright { 
+  text-align: center; font-weight: bolder;
+   margin-top: 3%; }
+@media (max-width: 990px) {
+  .sticky-logo {
+   z-index: 0; height: 500px; 
+   border-radius: 100%;
+    opacity: 0.09; width: 520px;
+     top: 33%;
+     display: block;
+     margin-left: auto;
+      margin-right: auto; }
+  .nav-link { 
+    font-size: 30px; }
+  .navbar-brand {
+   font-size: 50px; }
+  .coming-soon-div {
+   margin-top: 15%; }
+  .as { height: 325px; margin: auto; }
+  .project-body .card:hover {
+   height: 800px; }
+  .contact-row { 
+    font-size: 20px; }
+  .download-font { 
+    font-size: 25px; }
+  .testimonials-div {
+   overflow: hidden; margin-top: 9%;
+    }
+  .coming-button-register { 
+    font-size: 35px; 
+  }
 }
